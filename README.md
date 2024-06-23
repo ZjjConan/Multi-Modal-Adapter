@@ -13,7 +13,7 @@
 ## Installation 
 This code is built on top of the awesome project - [CoOp](https://github.com/KaiyangZhou/CoOp), so you need to follow its setup steps:
 
-First, you need to install the `dassl` environment - [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch). Simply follow the instructions described [here](https://github.com/KaiyangZhou/Dassl.pytorch#installation) to install `dassl` as well as PyTorch. After that, run `pip install -r requirements.txt` under `Multi-Modal-Adapter/` to install a few more packages required by [CLIP](https://github.com/openai/CLIP) (this should be done when `dassl` is activated). Then, you are ready to go.
+First, you need to install the `dassl` environment - [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch). Simply follow the instructions described [here](https://github.com/KaiyangZhou/Dassl.pytorch#installation) to install `dassl` as well as PyTorch. After that, run `pip install -r requirements.txt` under `Multi-Modal-Adapter/` to install a few more packages required by [CLIP](https://github.com/openai/CLIP) (this should be done when `dassl` is activated).
 
 Second, following [DATASETS.md](docs/DATASETS.md) to install the datasets.
 
@@ -23,7 +23,7 @@ Second, following [DATASETS.md](docs/DATASETS.md) to install the datasets.
 The script `run_examples.sh` provides a simple illustration. 
 
 ## Citation
-If you use this code in your research, please kindly cite the following papers
+If you find this work is helpful for your research, please kindly cite the following papers
 
 ```bash
 @InProceedings{Yang_2024_CVPR,

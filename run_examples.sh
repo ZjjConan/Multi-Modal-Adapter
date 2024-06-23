@@ -1,8 +1,3 @@
-
-# dataset_name: caltech101 oxford_pets stanford_cars oxford_flowers food101 fgvc_aircraft sun397 dtd eurosat ucf101
-# batch_size:   8          4           16            8              8       8             32     4   4       8     
-# max_epochs:   10         13          10            10             10      10            10     10  50      10
-
 GPU_ID=$1
 SEED=$2
 

@@ -48,7 +48,6 @@ Run
 
 $ python tools/parse_test_res.py output/my_experiment --multi-exp
 """
-import pdb
 import re
 import numpy as np
 import os.path as osp
@@ -63,11 +62,11 @@ def compute_ci95(res):
 
 
 def parse_function(*metrics, directory="", args=None, end_signal=None):
-
     print(f"Parsing files in {directory}")
     subdirs = listdir_nohidden(directory, sort=True)
-    
+
     outputs = []
+
     for subdir in subdirs:
         fpath = osp.join(directory, subdir, "log.txt")
         assert check_isfile(fpath)
@@ -108,18 +107,18 @@ def parse_function(*metrics, directory="", args=None, end_signal=None):
                 msg += f"{key}: {value}. "
             if key != "file":
                 metrics_results[key].append(value)
-        # print(msg)
+        print(msg)
 
     output_results = OrderedDict()
 
-    # print("===")
-    # print(f"Summary of directory: {directory}")
+    print("===")
+    print(f"Summary of directory: {directory}")
     for key, values in metrics_results.items():
         avg = np.mean(values)
         std = compute_ci95(values) if args.ci95 else np.std(values)
         print(f"* {key}: {avg:.2f}% +- {std:.2f}%")
         output_results[key] = avg
-    # print("===")
+    print("===")
 
     return output_results
 
@@ -152,6 +151,7 @@ def main(args, end_signal):
             metric, directory=args.directory, args=args, end_signal=end_signal
         )
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("directory", type=str, help="path to directory")
@@ -164,15 +164,6 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--keyword", default="accuracy", type=str, help="which keyword to extract"
-    )
-    parser.add_argument(
-        "--trainer", default="None", type=str, help="which trainer to extract"
-    )
-    parser.add_argument(
-        "--shot", default=16, type=int, help="which shot-based experiments to extract"
-    )
-    parser.add_argument(
-        "--suffix", default="None", type=str, help="which experiments to extract"
     )
     args = parser.parse_args()
 
