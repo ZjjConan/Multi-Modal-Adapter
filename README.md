@@ -42,7 +42,7 @@ Second, you need to follow [DATASETS.md](docs/DATASETS.md) to install the datase
 
 ## How to Run
 
-The script `run_examples.sh` provides a simple illustration. For example, to run the training and evaluation on Base-to-New generalization with `seed-1` on the `GPU-0`, you can use the following command:
+The script `run_examples.sh` provides a simple illustration. For example, to run the training and evaluation on Base-to-Novel generalization with `seed-1` on the `GPU-0`, you can use the following command:
 
 ```bash
 # arg1 = used gpu_id
