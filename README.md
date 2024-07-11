@@ -9,7 +9,7 @@
 
 ## Contributions
 
-- We introduce a dataset-level analysis method to systematically examine feature representations for transformerbased CLIP models. This analysis helps build more effective and efficient adapters for VLMs. 
+- We introduce a dataset-level analysis method to systematically examine feature representations for transformer-based CLIP models. This analysis helps build more effective and efficient adapters for VLMs. 
 - We propose a novel adapter that contains separate projection layers to improve feature representations for image and text encoders independently. We also introduce a shared projection to provide better alignment between
 vision-language representations.
 - We integrate our adapter into the well-known CLIP model and evaluate them on various few-shot generalization tasks. Experiment results show that our method achieves leading performance among all compared approaches.
