@@ -54,7 +54,7 @@ bash run_examples.sh 0 1
 ------------------------------------------------------------
 
 ## Citation
-If you find this work helpful for your research, please kindly cite the following papers:
+If you find this work helpful for your research, please kindly cite the following paper:
 
 ```bash
 @InProceedings{Yang_2024_CVPR,
