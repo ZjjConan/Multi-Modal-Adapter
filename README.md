@@ -6,7 +6,7 @@ Another related work has been published at IJCV2025 that may interest you: <br>
 > Learning with Enriched Inductive Biases for Vision-Language Models. <br>
 > Lingxiao Yang, Ru-Yuan Zhang, Qi Chen and Xiaohua Xie <br>
 > International Journal of Computer Vision 2025 <br>
-> [Paper](https://link.springer.com/article/10.1007/s11263-025-02354-1) [Code](https://github.com/ZjjConan/VLM-LwEIB)
+> [[Paper](https://link.springer.com/article/10.1007/s11263-025-02354-1)] [[Code](https://github.com/ZjjConan/VLM-LwEIB)]
 
 ## Highlights
 
